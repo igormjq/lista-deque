@@ -1,0 +1,68 @@
+body {
+  background-image: url('http://25.media.tumblr.com/tumblr_m31ws9vBfV1qap9uuo1_500.gif');
+}
+.content{
+  background: rgba(1, 1, 1, .5);
+  color: #FFF;
+  margin-top: 40px;
+}
+
+.content >div {
+  flex: 1;
+}
+
+.header {
+  background: rgba(1, 1, 1, .5);
+  color: #FFF;
+  text-align: center;
+}
+.input-group-append {
+  flex: 1;
+  border-bottom: 1px solid white;
+}
+
+.input-group-append:last-of-type {
+  border: none;
+}
+.input-group-append .btn {
+  flex: 1;
+  border-radius: 0;
+}
+.input-name {
+  margin-bottom: 20px;
+}
+#inNome {
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background: rgba(1, 1, 1, .7);
+  color: #fff;
+
+}
+#inNome:focus {
+  outline: none;
+}
+.input-group-text {
+  border-radius: 5px 0 0 5px;
+}
+
+.hang {
+  display: inline-block;
+  animation: hangLoose .5s infinite alternate;
+
+}
+
+#outLista1, #outLista2, #outLista {
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #FFF;
+}
+@keyframes hangLoose {
+  0% {
+    transform: rotate(15deg)
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}

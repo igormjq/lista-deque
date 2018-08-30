@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Lista de Alunos</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 header">
+        <h1>Lista Duplamente Ligada - Deque ⛓ <span class="hang">🤙</span></h1>
+        <h4 class=" font-italic">Lista de Alunos</h4>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+      <div class="col-sm-12 content d-flex">
+        <div class="input-group flex-column mb-3" style="padding: 15px">
+          <div class="input-name d-flex">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Nome:</span>
+            </div>
+            <input type="text" class="form-control" id="inNome" autofocus>
+          </div>
+          <div class="actions d-flex flex-column">
+            <div class="input-group-append">
+              <input type="button" class="btn btn-primary" value="Adicionar no Início" id="btAdicionar">
+            </div>
+  
+            <div class="input-group-append">
+              <input type="button" class="btn btn-success" value="Adicionar no Fim" id="btAdicionarFim">
+            </div>
+  
+            <div class="input-group-append">
+              <input type="button" class="btn btn-warning" value="Pesquisar" id="btPesquisar">
+            </div>
+  
+            <div class="input-group-append">
+              <input type="button" class="btn btn-danger" value="Excluir Primeiro" id="btExcluir">
+            </div>
+            <div class="input-group-append">
+              <input type="button" class="btn btn-danger" value="Excluir Último" id="btExcluirU">
+            </div>
+            <div class="input-group-append">
+              <input type="button" class="btn btn-primary" value="Lista pela Esquerda" id="btME">
+            </div>
+            <div class="input-group-append">
+              <input type="button" class="btn btn-primary" value="Lista pela Direita" id="btMD">
+            </div>
+          </div>
+          
+        </div>
+
+        <div style="padding: 15px;">
+          <div class="col-sm-12">
+            <h6>Esquerda -> Direita</h6>
+            <pre class="text-secondary font-weight-bold" id="outLista1"></pre>
+          </div>
+          <div style="margin-top: 40px" class="col-sm-12">
+            <h6>Direita -> Esquerda</h6>
+            <pre class="text-secondary font-weight-bold" id="outLista2"></pre>
+          </div>
+          <div style="margin-top: 40px" class="col-sm-12 final-list">
+            <h6>Lista Indexada</h6>
+            <pre class="text-secondary font-weight-bold" id="outLista"></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="deque.js"></script>
+  <script src="alunos.js"></script>
+</body>
+
+</html>
